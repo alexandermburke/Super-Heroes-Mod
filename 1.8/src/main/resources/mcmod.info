@@ -1,0 +1,16 @@
+[
+{
+  "modid": "shm",
+  "name": "§9Super Heroes ++ Mod",
+  "description": "§bA Mod based off Dc, The Flash, Arrow, Supernatural, etc.",
+  "version": "§81.0",
+  "mcversion": "1.8",
+  "url": "§8http://www.itopside.us",
+  "updateUrl": "",
+  "authorList": ["-Magik-"],
+  "credits": "§5Magik, Fiskfille, Gegy1000, CuchololoSPanishMan, and Javabuckets Nack",
+  "logoFile": "shm.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
