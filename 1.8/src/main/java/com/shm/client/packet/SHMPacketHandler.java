@@ -12,6 +12,8 @@ public class SHMPacketHandler
 {
 	protected String channelName = "SUPERHEROES";
 	
+	/* I am just not even gonna look at this, gegy, its yours xd */
+	
 	@SubscribeEvent
 	public void onServerPacket(ServerCustomPacketEvent event) throws IOException
 	{

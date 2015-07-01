@@ -8,11 +8,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class Batarang extends Item
+public class ItemBatarang extends Item
 {
     private static final String __OBFID = "CL_00000069";
 
-    public Batarang()
+    public ItemBatarang()
     {
         this.maxStackSize = 64;
         this.setCreativeTab(SuperHeroesMod.Tab1);

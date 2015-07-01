@@ -1,6 +1,9 @@
 package com.shm.common.item;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderItem;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -27,48 +30,18 @@ public class ModItems {
 	public static void register() {
 
 		
+		Batarang = new ItemBatarang().setUnlocalizedName("Model").setCreativeTab(SuperHeroesMod.Tab1);
+		GameRegistry.registerItem(Batarang, Batarang.getUnlocalizedName().substring(5));
+	
 		
-		
-		
-		RegisterItem(Batarang, "Batarang");
-		
-		
+		{
+		     RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
+		    
+		     renderItem.getItemModelMesher().register(Batarang, 0, new ModelResourceLocation(Reference.MODID + ":" + ((ItemBatarang) Batarang).setUnlocalizedName("Model"), "inventory"));
+		}	
 		
 	}
 
 	
 	
-	
-	
-	
-	
-	private static void registerArmor(Item item, String name)
-	{
-		String unlocalizedName = name.toLowerCase().replaceAll(" ", "_").replaceAll("'", "");
-		item.setUnlocalizedName(unlocalizedName);
-		item.setCreativeTab(SuperHeroesMod.Tab1);
-		
-		GameRegistry.registerItem(item, unlocalizedName);
-	}
-	
-	
-	
-	private static void RegisterItem(Item item, String name)
-	{
-		String unlocalizedName = name.toLowerCase().replaceAll(" ", "_").replaceAll("'", "");
-		item.setCreativeTab(SuperHeroesMod.Tab1);
-		
-		GameRegistry.registerItem(item, unlocalizedName);
-	}
-	
-	
-	
-	private static void registerBlock(Block block, String name)
-	{
-		String unlocalizedName = name.toLowerCase().replaceAll(" ", "_").replaceAll("'", "");
-		block.setCreativeTab(SuperHeroesMod.Tab1);
-		
-		GameRegistry.registerBlock(block, unlocalizedName);
-	}
-
 }

@@ -2,6 +2,7 @@ package com.shm.common.main;
 
 import com.shm.client.event.EventsHandler;
 import com.shm.common.achievement.SHMAchievements;
+import com.shm.common.item.ModItems;
 import com.shm.common.proxy.CommonProxy;
 import com.shm.common.tab.CreativeTab1;
 import com.shm.common.utils.Reference;
@@ -38,7 +39,7 @@ public class SuperHeroesMod
 		
 		proxy.registerRenderThings();
 		
-	//	ModItems.register();
+		ModItems.register();
 		
 		SHMAchievements.register();
 		
